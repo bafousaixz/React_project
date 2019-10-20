@@ -1,0 +1,45 @@
+.logo{
+  margin: 1% 35%;
+  border-bottom: 4px solid #b8e994;
+  text-align: center;
+}
+.App{
+  height: 100px;
+}
+.top-top{
+  background: #b8e994;
+  height: 24px;
+}
+.top-right{
+  margin-left: 70%;
+}
+.menu-top{
+  margin: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+
+}
+
+.name{
+  margin: 20px;
+  font-size: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #eb2f06;
+}
+.menu{
+  margin: 1% 30%;
+  text-align: center;
+}
+.content{
+  margin: 20px 10px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: .5s;
+  font-size: 20px;
+}
+.content:hover{
+  color: #4a69bd;
+}
