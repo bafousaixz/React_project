@@ -1,5 +1,6 @@
 import React from 'react';
-import './Home.css'
+import './Home.css';
+import Footer from './Footer.js';
 import {
     BrowserRouter as Router,
     Switch,
@@ -76,10 +77,10 @@ class Home extends React.Component{
                             </div>
                     </div>
 
-                    
-                    
-
                 </div>
+                
+                
+                <Footer/>
             </div>
         );    
     }

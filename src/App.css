@@ -1,7 +1,11 @@
 .logo{
-  margin: 1% 35%;
+  display: block;
+  height: 70px;
+  margin-top: 1%;
+  margin: 0 auto;
   border-bottom: 4px solid #b8e994;
   text-align: center;
+  line-height: 70px;
 }
 .App{
   height: 100px;
@@ -29,11 +33,14 @@
   color: #eb2f06;
 }
 .menu{
-  margin: 1% 30%;
+  margin: 0 auto;
   text-align: center;
+  display: block;
+  height: 40px;
+  line-height: 40px;
 }
 .content{
-  margin: 20px 10px;
+  margin-top: 20px;
   text-decoration: none;
   font-weight: bold;
   padding: 5px 10px;
