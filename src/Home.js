@@ -15,13 +15,13 @@ class Home extends React.Component{
             <div className="home">
                 <div className="phan-tren">
                     <div className="ngoai-cung-ben-trai">
-                        <Link to="/"><img src="./km.jpg" /></Link>
+                        <Link to="/"><img src="./images/km.jpg" /></Link>
                     </div>
 
                     <div className="box-office">
                         <h1>BOX OFFICE</h1>
                         <p>1. MALEFICENT 120Phút | 18/10/2019</p>
-                        <Link className="bookve" to="/">Mua vé ngay</Link>
+                        
                     </div>
 
                     <div className="phim-hot-vcl">

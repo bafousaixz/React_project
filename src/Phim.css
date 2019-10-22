@@ -1,16 +1,12 @@
 .phim{
     text-align: center;
 }
-.top_phim{
-    height: 40px;
-    background: #2ecc71;
-    font-size: 8px;
-    font-weight: bold;
-    line-height: 40px;
+h1{
+    font-size: 90%;
 }
 .footer{
     background-image: url(http://www.lottecinemavn.com/Media/WebAdmin/b3ba09c5d7be447d8e35292ecd653dd5.jpg) ;
-    height: 400px;
+    height: 450px;
     width: 100%;
     margin-bottom: 20px;
 }
