@@ -1,6 +1,8 @@
 import React from 'react';
 import './Phim.css';
 import SlideShow from './SlideShow.js';
+import Phimdc from './Movie/Phimdc.js'
+import Footer from './Footer.js'
 import {
     BrowserRouter as Router,
     Switch,
@@ -34,10 +36,19 @@ export default class Phim extends React.Component{
                     />
                 </div>
                 <div className="tl">
-                    <Link className="l" to="/">Phim đang chiếu</Link>
-                    <Link className="l"  to="/">Phim sắp chiếu</Link>
+                    <Link className="l" to="/Phim/Phimdangchieu">Phim đang chiếu</Link>
+                    <Link className="l"  to="Phim sap chieu">Phim sắp chiếu</Link>
+                </div>
+
+                <Router>
+                    <Route path="/Phim/Phimdangchieu"><Phimdc/></Route>
+                    <Route path="Phim sap chieu"><Phimdc/></Route>
+                </Router>
+                <div className="list">
+                    <Phimdc/>
                 </div>
                 
+                <Footer/>
             </div>
         );
     }

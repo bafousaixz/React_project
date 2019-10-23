@@ -27,7 +27,7 @@
 
 .name{
   margin: 20px;
-  font-size: 35px;
+  font-size: 40px;
   text-decoration: none;
   font-weight: bold;
   color: #eb2f06;
@@ -49,4 +49,10 @@
 }
 .content:hover{
   color: #4a69bd;
+}
+
+@media screen and ( max-width: 950px){
+  #as{
+    display: none;
+  }
 }

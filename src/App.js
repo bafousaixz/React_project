@@ -5,6 +5,8 @@ import About from './About.js';
 import Footer from './Footer.js';
 import Dropdown from './Dropdown.js';
 import Phim from './Phim.js';
+import Contact from './Contact/Contact.js'
+import Phimct from './Movie/Phimct.js'
 import {
   BrowserRouter as Router,
   Switch,
@@ -24,8 +26,8 @@ class App extends React.Component {
         <div className="App">
           <div className="top-top">
             <div className="top-right">
-            <Link className="menu-top" to="/About">About</Link>
-            <Link className="menu-top" to="/Contact">Contact</Link>
+            <Link id="as" className="menu-top" to="/About">About</Link>
+            <Link id="as" className="menu-top" to="/Contact">Contact</Link>
             <Link className="menu-top" to="/Đăng nhập">Đăng nhập</Link>
             </div>
           </div>
@@ -39,15 +41,15 @@ class App extends React.Component {
               <Link className="content" to="/Khuyến mãi">Khuyến mãi</Link>
             </div>
             
-        <hr />
+      
         <Switch>
           <Route exact path="/"><Home/></Route>
           <Route path="/Mua vé"><Muave/></Route>
           <Route path="/Phim"><Phim/></Route>
-          <Route path="/Rạp"><Rap/></Route>
+          <Route path="/Rạp"><Phimct/></Route>
           <Route path="/Khuyến Mãi"><Khuyenmai/></Route>
           <Route path="/About"><About/></Route>
-          {/* <Route path="/Contact"><Contact/></Route> */}
+          <Route path="/Contact"><Contact/></Route>
           <Route path="/Đăng nhập"><Login/></Route>
         </Switch>
       </div>

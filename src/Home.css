@@ -20,6 +20,10 @@
     margin:0% 1%;
     text-align: center;
 }
+
+.box-office h1{
+    margin-top: 20px;
+}
 .phim-hot-vcl{
     float: left;
     width: 52.4%;

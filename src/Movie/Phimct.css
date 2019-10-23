@@ -1,0 +1,69 @@
+.Phimct{
+    font-size: .7vw;
+    text-align: center;
+    border: 1px solid #2ecc71;
+    /* max-width: 230px;  */
+    /* max-width: 70%;
+    max-height: 80%; */
+}
+.Phimct p{
+    display: inline-block;
+    margin: 5px;
+} 
+img{
+    margin-top: -1px;
+    object-fit: cover
+}
+h1{
+    margin: 5px 0px;
+    height: 10px;
+    line-height: 2px;
+}
+.time{
+    border-right: 1px solid #2ecc71;
+    padding-right: 10px;
+}
+.ct{
+    border-top: 1px solid #2ecc71;
+}
+
+.Phimdc{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* max-width: 1200px; */
+    /* min-height: 100vh; */
+    margin-bottom: 30px;
+
+}
+.contact{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    padding: 0 20px;
+    align-items: center;
+}
+.ds{
+    margin: 10px;
+    width: 19%;
+}
+.contac{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    padding: 0 20px;
+    align-items: center;
+}
+
+@media screen and ( max-width: 600px){
+    .contact, .contac{
+        flex-direction: column;
+    }
+    .ds{
+        width: 50%;
+        max-width: 230px;
+    }
+}
