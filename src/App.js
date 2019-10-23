@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
 import Home from './Home.js';
-import Phim from './Phim.js';
 import About from './About.js';
 import Footer from './Footer.js';
+import Dropdown from './Dropdown.js';
+import Phim from './Phim.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,6 +12,7 @@ import {
   Link,
   useParams
 } from "react-router-dom";
+
 
 class App extends React.Component {
   constructor(props){

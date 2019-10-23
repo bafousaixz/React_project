@@ -9,35 +9,36 @@ import {
     useParams
   } from "react-router-dom";
 
-class Phim extends React.Component{
+
+const collection = [
+  { src: './images/01.jpg'},
+  { src: './images/02.jpg'},
+  { src: './images/03.jpg'},
+  { src: './images/04.jpg'},
+  { src: './images/05.jpg'},
+  { src: './images/06.jpg'},
+];
+
+export default class Phim extends React.Component{
     render(){
         return(
-            <div className="phim">
-                <div style={{background:"#b8e994"}} className="col-sm-12">
-                    <h1>PHIM HOT TẠI RẠP</h1>
-                </div>
-
-                <div className="footer">
-                    <SlideShow/>
-                </div>
-
-                <div className="select">
-                    <Link id="se" className="selec" to="/">Phim đang chiếu</Link>
-                    <Link className="selec" to="/">Phim sắp chiếu</Link>
-
+            <div className="Phim">
+                <div className="slide" >
+                    <p className="td">phim hot tại rạp</p>
                 
+                    <SlideShow
+                        input={collection}
+                        ratio={`9:3`}
+                        mode={`automatic`}
+                        timeout={`3000`}
+                    />
                 </div>
-
-                <div className="row">
-                        <div  className="col-sm-4"><p>hello</p></div>
-                        <div className="col-sm-8">asd</div>
+                <div className="tl">
+                    <Link className="l" to="/">Phim đang chiếu</Link>
+                    <Link className="l"  to="/">Phim sắp chiếu</Link>
                 </div>
-
+                
             </div>
         );
     }
 }
-
-
-
-export default Phim;
