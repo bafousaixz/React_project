@@ -1,5 +1,4 @@
 .Phimct{
-
     text-align: center;
     border: 1px solid #2ecc71;
     /* max-width: 230px;  */
@@ -9,18 +8,18 @@
 .Phimct p{
     display: inline-block;
     margin: 5px;
-    font-size: 1vw;
+    font-size: 12px;
 } 
 img{
     margin-top: -1px;
     margin-bottom: -1px;
 }
 h1{
-    font-size: 1.5vw;
+    font-size: 20px;
     margin: 5px 0px;
-    height: 15px;
+    height: 20px;
     max-height: 70%;
-    line-height: 15px;
+    line-height: 20px;
 
 }
 .time{
@@ -65,6 +64,5 @@ h1{
  @media screen and ( max-width: 800px){
     .contact, .contac{
         flex-wrap: wrap;
-    }
-   
+    }  
 } 
