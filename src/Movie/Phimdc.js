@@ -7,10 +7,10 @@ export default class Phimdc extends React.Component{
         return(
             <div className="Phimdc">
                 <div className="contact">
-                    <div className="ds"> <Phimct/></div>
-                    <div className="ds"> <Phimct/> </div>
-                    <div className="ds"> <Phimct/> </div>
-                    <div className="ds"> <Phimct/> </div>
+                    <div className="ds-1"> <Phimct/></div>
+                    <div className="ds-1"> <Phimct/> </div>
+                    <div className="ds-2"> <Phimct/> </div>
+                    <div className="ds-2"> <Phimct/> </div>
                 </div>
                 <div className="contac">
                     <div className="ds"> <Phimct/></div>

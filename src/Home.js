@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import Footer from './Footer.js';
+import Footer from './Footer/Footer.js';
 import {
     BrowserRouter as Router,
     Switch,

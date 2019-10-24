@@ -1,5 +1,5 @@
 .Phimct{
-    font-size: .7vw;
+
     text-align: center;
     border: 1px solid #2ecc71;
     /* max-width: 230px;  */
@@ -9,15 +9,19 @@
 .Phimct p{
     display: inline-block;
     margin: 5px;
+    font-size: 1vw;
 } 
 img{
     margin-top: -1px;
-    object-fit: cover
+    margin-bottom: -1px;
 }
 h1{
+    font-size: 1.5vw;
     margin: 5px 0px;
-    height: 10px;
-    line-height: 2px;
+    height: 15px;
+    max-height: 70%;
+    line-height: 15px;
+
 }
 .time{
     border-right: 1px solid #2ecc71;
@@ -45,9 +49,9 @@ h1{
     padding: 0 20px;
     align-items: center;
 }
-.ds{
+.ds, .ds-1, .ds-2{
     margin: 10px;
-    width: 19%;
+    width: 230px;
 }
 .contac{
     display: flex;
@@ -58,12 +62,9 @@ h1{
     align-items: center;
 }
 
-@media screen and ( max-width: 600px){
+ @media screen and ( max-width: 800px){
     .contact, .contac{
-        flex-direction: column;
+        flex-wrap: wrap;
     }
-    .ds{
-        width: 50%;
-        max-width: 230px;
-    }
-}
+   
+} 

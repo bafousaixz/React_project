@@ -1,8 +1,8 @@
 import React from 'react';
 import './Phim.css';
-import SlideShow from './SlideShow.js';
-import Phimdc from './Movie/Phimdc.js'
-import Footer from './Footer.js'
+import SlideShow from '../SlideShow.js';
+import Phimdc from './Phimdc.js'
+import Footer from '../Footer/Footer.js'
 import {
     BrowserRouter as Router,
     Switch,

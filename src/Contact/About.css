@@ -15,17 +15,8 @@
     margin-top: 40px;
 }
 
-.Footer{
-    height: 350px; 
-}
-.top{
-    height: 85%;
-    background: #2ecc71;
-}
-.bot{
-    height: 15%;
-    background: #34495e;
-}
+
+
 img{
     margin: 20px auto;
     display: block;

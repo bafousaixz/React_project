@@ -1,7 +1,7 @@
 import React from 'react';
 import { Player } from 'video-react';
 import './About.css';
-import Footer from './Footer.js';
+import Footer from '../Footer/Footer.js';
 // import "node_modules/video-react/dist/video-react.css";
 
 class About extends React.Component{

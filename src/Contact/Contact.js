@@ -12,6 +12,7 @@ export default class Contact extends React.Component{
                     <textarea rows="1" placeholder="Messenger" className="message"></textarea>
                     <button>Get in touch</button>
                 </div>
+                
             </div>
         );
     }

@@ -1,10 +1,9 @@
 import React from 'react';
 import './App.css';
 import Home from './Home.js';
-import About from './About.js';
-import Footer from './Footer.js';
-import Dropdown from './Dropdown.js';
-import Phim from './Phim.js';
+import About from './Contact/About.js';
+import Footer from './Footer/Footer.js';
+import Phim from './Movie/Phim.js';
 import Contact from './Contact/Contact.js'
 import Phimct from './Movie/Phimct.js'
 import {
