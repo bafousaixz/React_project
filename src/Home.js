@@ -8,6 +8,7 @@ import {
     Link,
     useParams
   } from "react-router-dom";
+import Phimdc from './Movie/Phimdc';
 
 class Home extends React.Component{
     render(){
@@ -18,11 +19,11 @@ class Home extends React.Component{
                         <Link to="/"><img src="./images/km.jpg" /></Link>
                     </div>
 
-                    <div className="box-office">
+                    {/* <div className="box-office">
                         <h1>BOX OFFICE</h1>
                         <p>1. MALEFICENT 120Phút | 18/10/2019</p>
                         
-                    </div>
+                    </div> */}
 
                     <div className="phim-hot-vcl">
                         <Link to="/"><i id="nut-play" class="fas fa-play"></i></Link>
@@ -30,7 +31,7 @@ class Home extends React.Component{
                 </div>
 
                 <div className="danh-sach-phim">
-
+                    <Phimdc/>
                 </div>
 
                 <div className="tin-khuyen-mai">

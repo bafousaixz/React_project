@@ -6,6 +6,14 @@ import './Phimct.css';
 
 export default class Phimdc extends React.Component{
     render(){
+
+        // const list = [
+        //     { img : "./images/phim3.jpg", name : "MALEFICENT 2", date: "18/10/2019", time: "120Phút"},
+        //     { img : "./images/phim2.jpg", name : "BIỆT ĐỘI BẤT HẢO", date: "11/10/2019", time: "115Phút"},
+        //     { img : "./images/phim1.jpg", name : "JOKER", date: "04/10/2019", time: "120Phút"},
+        //     { img : "./images/phim5.jpg", name : "ĐÀN ÔNG SONG TỬ", date: "11/10/2019", time: "120Phút"},
+        //     { img : "./images/phim4.jpg", name : "THẤT SƠN TÂM LINH", date: "09/10/2019", time: "105Phút"},
+        // ]
         return(
             <div className="Phimdc">
                 <div className="contact">

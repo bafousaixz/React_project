@@ -150,11 +150,7 @@ export default class Slideshow extends React.Component {
                     `slide ${this.state.slideIndex === index ? "active" : ""}`
                   }
                 >
-                  {/* <div className="number-text">
-                    {`${index + 1} / ${this.props.input.length}`}
-                  </div> */}
                   <img className="image" src={image.src} alt={image.caption} />
-                  {/* <div className="caption-text">{image.caption}</div> */}
                 </div>
               )
             })

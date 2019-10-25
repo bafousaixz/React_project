@@ -6,6 +6,7 @@ import Footer from './Footer/Footer.js';
 import Phim from './Movie/Phim.js';
 import Contact from './Contact/Contact.js'
 import Phimct from './Movie/Phimct.js'
+import Login from './Login/Login.js'
 import {
   BrowserRouter as Router,
   Switch,
@@ -31,7 +32,7 @@ class App extends React.Component {
             </div>
           </div>
           <div className="logo">
-          <Link className="name" to="/"><i class="fab fa-react"></i> Susan CINEMA</Link>
+          <Link className="name" to="/"><i class="fab fa-react"></i> YanKii CINEMA</Link>
           </div>
             <div className= "menu">
               <Link className="content" to="/mua-ve">Mua vé</Link>
@@ -92,15 +93,5 @@ class Khuyenmai extends React.Component{
   };
 }
 
-class Login extends React.Component{
-  constructor(props){
-    super(props)
-  }
-  render(){
-    return(
-      <h1>Day la trang Đăng nhập</h1>
-    );
-  };
-}
 
 export default App;

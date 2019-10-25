@@ -5,6 +5,7 @@
 .ngoai-cung-ben-trai {
     width: 25%;
     float: left;
+    margin-right: 10px;
 }
 .ngoai-cung-ben-trai img{
     width: 100%;
@@ -26,7 +27,7 @@
 }
 .phim-hot-vcl{
     float: left;
-    width: 52.4%;
+    width: 74%;
     height: 600px;
     background-image: url("http://www.lottecinemavn.com/Media/MovieFile//MovieImg/201910/10194_105_100009.jpg");
     background-size: cover;
@@ -38,9 +39,7 @@
     font-size: 40px;
 }
 .danh-sach-phim{
-    height: 300px;
-    background: #b8e994;
-    margin-bottom: 30px;
+    border-top: 1px solid;
 }
 .tin-khuyen-mai{
     height: 900px;
