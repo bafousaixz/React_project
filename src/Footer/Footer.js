@@ -5,6 +5,7 @@ class Footer extends React.Component{
     render(){
         return(
             <div className="Footer">
+                <img src="./images/footer.jpg"/>
                <div className="top">
                     <div className="gt">
                         <h1>Giới thiệu</h1>

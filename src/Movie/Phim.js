@@ -2,13 +2,16 @@ import React from 'react';
 import './Phim.css';
 import SlideShow from '../SlideShow.js';
 import Phimdc from './Phimdc.js'
+import Phimsc from './Phimsc.js'
 import Footer from '../Footer/Footer.js'
+
 import {
     BrowserRouter as Router,
     Switch,
     Route,
     Link,
-    useParams
+    useParams,
+    useRouteMatch
   } from "react-router-dom";
 
 
@@ -22,7 +25,12 @@ const collection = [
 ];
 
 export default class Phim extends React.Component{
+    constructor(props){
+        super(props);
+    }
+
     render(){
+        // let { path, url } = useRouteMatch();
         return(
             <div className="Phim">
                 <div className="slide" >
@@ -36,18 +44,19 @@ export default class Phim extends React.Component{
                     />
                 </div>
                 <div className="tl">
-                    <Link className="l" to="/Phim/Phimdangchieu">Phim đang chiếu</Link>
-                    <Link className="l"  to="Phim sap chieu">Phim sắp chiếu</Link>
+                    <h1 className="l">Phim đang chiếu</h1>
                 </div>
 
-                <Router>
-                    <Route path="/Phim/Phimdangchieu"><Phimdc/></Route>
-                    <Route path="Phim sap chieu"><Phimdc/></Route>
-                </Router>
                 <div className="list">
                     <Phimdc/>
                 </div>
-                
+
+                <div className="tl">
+                    <h1 className="l">Phim sắp chiếu</h1>
+                </div>
+                <div className="list">
+                    <Phimsc/>
+                </div>
                 <Footer/>
             </div>
         );

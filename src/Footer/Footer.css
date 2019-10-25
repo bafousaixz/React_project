@@ -8,6 +8,12 @@
     margin-top: 20px;
     color: #dfe6e9 ;
     height: 300px; 
+    border-top: 1px solid;
+}
+.Footer img{
+    margin: 0 auto;
+    height: 80%;
+    object-fit: cover;
 }
 .bot{
     height: 15%;

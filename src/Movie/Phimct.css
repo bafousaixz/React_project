@@ -1,21 +1,25 @@
 .Phimct{
     text-align: center;
-    border: 1px solid #2ecc71;
+    border: 1px solid #fff;
+    box-shadow: 5px 5px 5px 5px #ecf0f1;
     /* max-width: 230px;  */
     /* max-width: 70%;
     max-height: 80%; */
+    padding: 10px;
+    border-radius: 10px;
+    
 }
 .Phimct p{
     display: inline-block;
     margin: 5px;
     font-size: 12px;
 } 
-img{
+/* .Phimct img{
     margin-top: -1px;
     margin-bottom: -1px;
-}
+} */
 h1{
-    font-size: 20px;
+    font-size: 16px;
     margin: 5px 0px;
     height: 20px;
     max-height: 70%;
@@ -37,7 +41,7 @@ h1{
     justify-content: center;
     /* max-width: 1200px; */
     /* min-height: 100vh; */
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 
 }
 .contact{
@@ -49,7 +53,7 @@ h1{
     align-items: center;
 }
 .ds, .ds-1, .ds-2{
-    margin: 10px;
+    margin: 15px;
     width: 230px;
 }
 .contac{
@@ -59,9 +63,10 @@ h1{
     justify-content: center;
     padding: 0 20px;
     align-items: center;
+
 }
 
- @media screen and ( max-width: 800px){
+ @media screen and ( max-width: 1200px){
     .contact, .contac{
         flex-wrap: wrap;
     }  

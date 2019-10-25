@@ -18,11 +18,11 @@ export default class Phimct extends React.Component{
     render(){
         return(
             <div className="Phimct">
-                <Link to="/"><img src="./images/phim1.jpg"></img></Link>
-                <h1>Joker</h1>
+                <Link to="/"><img src={this.props.img}></img></Link>
+                <h1>{this.props.name}</h1>
                 <div className="ct">
-                    <p className="time">120 Phút</p>
-                    <p>04/10/2019</p>
+                    <p className="time">{this.props.time}</p>
+                    <p>{this.props.date}</p>
                 </div>
             </div>
         );
