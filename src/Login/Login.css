@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 .Login{
-    max-height: 400px;
-    width: 30%;
+    max-height: 500px;
+    width: 25%;
     text-align: center;
     margin: 10% auto;
     border: 1px solid #fff;
+    border-radius: 10px;
     background: #fff;
-    box-shadow: 5px 5px 5px 5px #ecf0f1;
+    box-shadow: 5px 5px 5px 5px rgba(178, 190, 195,0.5);
 }
 .fom{
    margin: 10% 0%;
@@ -16,24 +18,25 @@
     border: none;
     outline: none;
     border-bottom: 1px solid black;
-    color: #fff;
     padding: 10px ;
     font-size: 14px;
     margin-bottom: 30px;
-    max-width: 60%;
+    width: 50%;
 }
 .fom button{
+    margin-top: 20px;
     padding: 10px 30px;
     background: #8e44ad;
     border: 1px solid #8e44ad;
     border-radius: 5px;
     color: #fff;
     font-weight: bold;
+    width: 50%;
 }
 
 @media screen and ( max-width: 1200px){
     .Login{
-        width: 40%;
+        width: 38%;
     }
 }
 @media screen and ( max-width: 700px){
@@ -49,13 +52,16 @@
 .roi{
     margin-top: 5%;
     margin-bottom: -7%;
+    font-family: 'Permanent Marker', cursive;
 }
 .bef{
-    margin: 20px;
+    margin: 10px;
     text-decoration: none;
     font-size: 20px;
     border: 1px solid;
     padding: 10px 20px;
+    background: #a29bfe;
+    color: #fff;
 }
 
 .abc{

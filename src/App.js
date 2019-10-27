@@ -31,28 +31,30 @@ class App extends React.Component {
             <Link className="menu-top" to="/dang-nhap">Đăng nhập</Link>
             </div>
           </div>
+
           <div className="logo">
-          <Link className="name" to="/"><i class="fab fa-react"></i> YanKii CINEMA</Link>
+          <Link className="name" to="/"><i id="bcd" class="fab fa-creative-commons"></i> Susan </Link>
           </div>
-            <div className= "menu">
-              <Link className="content" to="/mua-ve">Mua vé</Link>
-              <Link className="content" to="/phim">Phim</Link>
-              <Link className="content" to="/rap">Rạp</Link>
-              <Link className="content" to="/khuyen-mai">Khuyến mãi</Link>
-            </div>
+
+          <div className= "menu">
+            <Link className="content" to="/mua-ve">Mua vé</Link>
+            <Link className="content" to="/phim">Phim</Link>
+            <Link className="content" to="/rap">Rạp</Link>
+            <Link className="content" to="/khuyen-mai">Khuyến mãi</Link>
+          </div>
             
       
-        <Switch>
-          <Route exact path="/"><Home/></Route>
-          <Route path="/mua-ve"><Muave/></Route>
-          <Route path="/phim"><Phim/></Route>
-          <Route path="/rap"><Rap/></Route>
-          <Route path="/khuyen-mai"><Khuyenmai/></Route>
-          <Route path="/About"><About/></Route>
-          <Route path="/Contact"><Contact/></Route>
-          <Route path="/dang-nhap"><Login/></Route>
-        </Switch>
-      </div>
+          <Switch>
+            <Route exact path="/"><Home/></Route>
+            <Route path="/mua-ve"><Muave/></Route>
+            <Route path="/phim"><Phim/></Route>
+            <Route path="/rap"><Rap/></Route>
+            <Route path="/khuyen-mai"><Khuyenmai/></Route>
+            <Route path="/About"><About/></Route>
+            <Route path="/Contact"><Contact/></Route>
+            <Route path="/dang-nhap"><Login/></Route>
+          </Switch>
+        </div>
       </Router>
       
     );

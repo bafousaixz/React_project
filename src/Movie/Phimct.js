@@ -22,7 +22,7 @@ export default class Phimct extends React.Component{
                 <h1>{this.props.name}</h1>
                 <div className="ct">
                     <p className="time">{this.props.time}</p>
-                    <p>{this.props.date}</p>
+                    <p className="date">{this.props.date}</p>
                 </div>
             </div>
         );

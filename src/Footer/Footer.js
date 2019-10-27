@@ -28,7 +28,7 @@ class Footer extends React.Component{
                </div>
 
                <div className="bot">
-                    <p>Công Ty Cổ Phần Phim Thiên Ngân, Tầng 5, Toà Nhà Mặt Trời Sông Hồng, 23 Phan Chu Trinh, Phường Phan Chu Trinh, Quận Hoàn Kiếm, Hà Nội</p>
+                    <p><i class="fas fa-home"></i> K146/59 Phan Văn Định, Liên Chiểu, Đà Nẵng</p>
                </div>
             </div>
         );
