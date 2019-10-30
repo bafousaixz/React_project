@@ -5,7 +5,7 @@ import About from './Contact/About.js';
 import Footer from './Footer/Footer.js';
 import Phim from './Movie/Phim.js';
 import Contact from './Contact/Contact.js'
-import Phimct from './Movie/Phimct.js'
+import Phimdel from './Movie/Phimdel.js'
 import Login from './Login/Login.js'
 import {
   BrowserRouter as Router,
@@ -29,6 +29,7 @@ class App extends React.Component {
             <Link id="as" className="menu-top" to="/About">About</Link>
             <Link id="as" className="menu-top" to="/Contact">Contact</Link>
             <Link className="menu-top" to="/dang-nhap">Đăng nhập</Link>
+            <Link  to="/phim-detail"></Link>
             </div>
           </div>
 
@@ -50,9 +51,11 @@ class App extends React.Component {
             <Route path="/phim"><Phim/></Route>
             <Route path="/rap"><Rap/></Route>
             <Route path="/khuyen-mai"><Khuyenmai/></Route>
+            <Route path="/khuyen-mai/:id"><Khuyenmai/></Route>
             <Route path="/About"><About/></Route>
             <Route path="/Contact"><Contact/></Route>
             <Route path="/dang-nhap"><Login/></Route>
+            <Route path="/phim-detail/:id"><Phimdel/></Route>
           </Switch>
         </div>
       </Router>

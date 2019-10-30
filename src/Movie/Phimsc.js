@@ -1,51 +1,52 @@
 import React from 'react';
-import Phimct from './Phimct.js';
+import {connect} from 'react-redux';
 import './Phimct.css';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    useParams
+  } from "react-router-dom";
 
 
 
-export default class Phimsc extends React.Component{
+class PhimcsList extends React.Component{
+
+    createFoodListItems(){
+        let listItems = this.props.psc.map(
+            (phimsc)=>{
+                return(
+                    <div key={phimsc.img} className="Phimct">
+                        <Link to="/phim-detail"><img src={phimsc.img}></img></Link>
+                        <h1>{phimsc.name}</h1>
+                        <div className="ct">
+                            <p className="time">{phimsc.time}</p>
+                            <p className="date">{phimsc.date}</p>
+                        </div>
+                    </div>
+                );
+            }
+        );
+        return listItems;
+    }
     render(){
         return(
             <div className="Phimdc">
-                <div className="contac">
-                    <div className="ds-1"> <Phimct
-                    img="./images/phim6.jpg"
-                    name="ĐẠI DỊCH TỬ THẦN"
-                    date="31/10/2019"
-                    time="90Phút"
-                    /></div>
-                   
-                    <div className="ds-2"> <Phimct
-                    img="./images/phim7.jpg"
-                    name="KẺ HỦY DIỆT"
-                    date="01/11/2019"
-                    time="130Phút"
-                    /> </div>
-
-                    <div className="ds-2"> <Phimct
-                    img="./images/phim8.jpg"
-                    name="ĐỒI ĐỊA ĐÀNG"
-                    date="01/11/2019"
-                    time="100Phút"
-                    /> </div>
-
-                     <div className="ds-1"> <Phimct
-                    img="./images/phim9.jpg"
-                    name="DOCTOR SLEEP"
-                    date="08/11/2019"
-                    time="100Phút"
-                    /></div>
-
-                    <div className="ds-1"> <Phimct
-                    img="./images/phim10.jpg"
-                    name="NẮNG 3"
-                    date="25/12/2019"
-                    time="100Phút"
-                    /></div>
+                <div className="contact">
+                    {this.createFoodListItems()}
                 </div>
-               
             </div>
         );
     }
 }
+
+function mapStateToProps(state){
+    return{
+        psc: state.psc
+    };
+}
+
+let PhimcsContainer = connect(mapStateToProps)(PhimcsList);
+
+export default PhimcsContainer;

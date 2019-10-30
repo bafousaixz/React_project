@@ -1,57 +1,55 @@
 import React from 'react';
 import Phimct from './Phimct.js';
+import {connect} from 'react-redux';
 import './Phimct.css';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    useParams
+  } from "react-router-dom";
 
 
 
-export default class Phimdc extends React.Component{
+class PhimdcList extends React.Component{
+    
+    createPhimListItems(){
+        let listItems = this.props.pdc.map(
+            (phimdc)=>{
+                return(
+                    <div key={phimdc.img} className="Phimct">
+                        <Link to={`/phim-detail/${phimdc.id}`}><img src={phimdc.img}></img></Link>
+                        <h1>{phimdc.name}</h1>
+                        <div className="ct">
+                            <p className="time">{phimdc.time}</p>
+                            <p className="date">{phimdc.date}</p>
+                        </div>
+                    </div>
+                );
+            }
+        );
+        return listItems;
+    }
     render(){
-
-        // const list = [
-        //     { img : "./images/phim3.jpg", name : "MALEFICENT 2", date: "18/10/2019", time: "120Phút"},
-        //     { img : "./images/phim2.jpg", name : "BIỆT ĐỘI BẤT HẢO", date: "11/10/2019", time: "115Phút"},
-        //     { img : "./images/phim1.jpg", name : "JOKER", date: "04/10/2019", time: "120Phút"},
-        //     { img : "./images/phim5.jpg", name : "ĐÀN ÔNG SONG TỬ", date: "11/10/2019", time: "120Phút"},
-        //     { img : "./images/phim4.jpg", name : "THẤT SƠN TÂM LINH", date: "09/10/2019", time: "105Phút"},
-        // ]
+        // let list = this.props.pdc;
+        //  console.log(list);
         return(
             <div className="Phimdc">
                 <div className="contact">
-                
-                    <div className="ds-1"> <Phimct
-                    img="./images/phim3.jpg"
-                    name="MALEFICENT 2"
-                    date="18/10/2019"
-                    time="120Phút"
-                    /></div>
-                    <div className="ds-1"> <Phimct
-                    img="./images/phim2.jpg"
-                    name="BIỆT ĐỘI BẤT HẢO"
-                    date="11/10/2019"
-                    time="115Phút"
-                    /> </div>
-                    <div className="ds-2"> <Phimct
-                    img="./images/phim1.jpg"
-                    name="JOKER"
-                    date="04/10/2019"
-                    time="120Phút"
-                    /> </div>
-                    <div className="ds-1"> <Phimct
-                    img="./images/phim5.jpg"
-                    name="ĐÀN ÔNG SONG TỬ"
-                    date="11/10/2019"
-                    time="120Phút"
-                    /> </div>
-                    <div className="ds-2"> <Phimct
-                    img="./images/phim4.jpg"
-                    name="THẤT SƠN TÂM LINH"
-                    date="09/10/2019"
-                    time="105Phút"
-                    /> </div>
+                    {this.createPhimListItems()}
                 </div>
-                
-               
             </div>
         );
     }
 }
+
+function mapStateToProps(state){
+    return{
+        pdc: state.pdc
+    };
+}
+
+let PhimcsContainer = connect(mapStateToProps)(PhimdcList);
+
+export default PhimcsContainer;

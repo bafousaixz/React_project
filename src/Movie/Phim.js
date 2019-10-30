@@ -1,9 +1,10 @@
 import React from 'react';
 import './Phim.css';
-import SlideShow from '../SlideShow.js';
-import Phimdc from './Phimdc.js'
+import SlideShow from '../SlideShow/SlideShow.js';
+import PhimcsContainer from './Phimdc.js'
 import Phimsc from './Phimsc.js'
 import Footer from '../Footer/Footer.js'
+import Phimct from './Phimct.js'
 
 import {
     BrowserRouter as Router,
@@ -48,7 +49,7 @@ export default class Phim extends React.Component{
                 </div>
 
                 <div className="list">
-                    <Phimdc/>
+                    <PhimcsContainer/>
                 </div>
 
                 <div className="tl">

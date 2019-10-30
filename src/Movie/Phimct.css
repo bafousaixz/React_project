@@ -5,7 +5,8 @@
     /* max-width: 230px;  */
     /* max-width: 70%;
     max-height: 80%; */
-    padding: 10px;
+    margin: 10px;
+    padding: 20px;
     border-radius: 10px;
     
 }
@@ -49,6 +50,7 @@ h1{
     /* max-width: 1200px; */
     /* min-height: 100vh; */
     margin-bottom: 60px;
+   
 
 }
 .contact{
@@ -78,6 +80,9 @@ h1{
     .contact, .contac{
         flex-wrap: wrap;
     }  
+    .Phimct{
+        max-width: 200px;
+    }
 } 
 @media screen and ( max-width: 550px){
     .contact, .contac{
