@@ -1,13 +1,9 @@
 import React from 'react';
-import Phimct from './Phimct.js';
 import {connect} from 'react-redux';
 import './Phimct.css';
 import {
     BrowserRouter as Router,
-    Switch,
-    Route,
     Link,
-    useParams
   } from "react-router-dom";
 
 
@@ -19,7 +15,7 @@ class PhimdcList extends React.Component{
             (phimdc)=>{
                 return(
                     <div key={phimdc.img} className="Phimct">
-                        <Link to={`/phim-detail/${phimdc.id}`}><img src={phimdc.img}></img></Link>
+                        <Link to={`/phim-detail/${phimdc.id}`} target="_blank"><img src={phimdc.img}></img></Link>
                         <h1>{phimdc.name}</h1>
                         <div className="ct">
                             <p className="time">{phimdc.time}</p>

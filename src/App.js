@@ -7,6 +7,8 @@ import Phim from './Movie/Phim.js';
 import Contact from './Contact/Contact.js'
 import Phimdel from './Movie/Phimdel.js'
 import Login from './Login/Login.js'
+import Datve from './Datve/Datve.js'
+import Food from './food/Food.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -49,13 +51,15 @@ class App extends React.Component {
             <Route exact path="/"><Home/></Route>
             <Route path="/mua-ve"><Muave/></Route>
             <Route path="/phim"><Phim/></Route>
-            <Route path="/rap"><Rap/></Route>
+            <Route path="/rap"><Food/></Route>
             <Route path="/khuyen-mai"><Khuyenmai/></Route>
             <Route path="/khuyen-mai/:id"><Khuyenmai/></Route>
             <Route path="/About"><About/></Route>
             <Route path="/Contact"><Contact/></Route>
             <Route path="/dang-nhap"><Login/></Route>
             <Route path="/phim-detail/:id"><Phimdel/></Route>
+            <Route path="/dat-ve"><Datve/></Route>
+    
           </Switch>
         </div>
       </Router>

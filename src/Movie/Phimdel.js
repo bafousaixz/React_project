@@ -20,7 +20,7 @@ class Phimdel extends React.Component{
         // return;
         // var a = this.props.pdc;
         // var phim = a[parseInt(id, 10)];
-        console.log();
+        console.log(id);
 
         var phim = this.props.pdc[id-1];
         console.log("Phim");
@@ -44,10 +44,10 @@ class Phimdel extends React.Component{
                         <div className="thongtin-detail">
                             <h1>{phim.name}</h1>
                             <ul>
-                                <li>Xếp hạng</li>
-                                <li>Ngày phát hành {phim.date}</li>
-                                <li>Thời lượng {phim.time} </li>
-                                <li>Loại</li>
+                                <li><b>Xếp hạng: </b></li>
+                                <li><b>Ngày phát hành: </b>{phim.date}</li>
+                                <li><b>Thời lượng: </b>{phim.time} </li>
+                                <li><b>Loại: </b></li>
                             </ul>
                         </div>
                         <div className="chitiet-detail">
