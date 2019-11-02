@@ -4,17 +4,6 @@ import SlideShow from '../SlideShow/SlideShow.js';
 import PhimcsContainer from './Phimdc.js'
 import Phimsc from './Phimsc.js'
 import Footer from '../Footer/Footer.js'
-import Phimct from './Phimct.js'
-
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    useParams,
-    useRouteMatch
-  } from "react-router-dom";
-
 
 const collection = [
   { src: './images/01.jpg'},
@@ -26,12 +15,7 @@ const collection = [
 ];
 
 export default class Phim extends React.Component{
-    constructor(props){
-        super(props);
-    }
-
     render(){
-        // let { path, url } = useRouteMatch();
         return(
             <div className="Phim">
                 <div className="slide" >

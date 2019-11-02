@@ -2,11 +2,8 @@ import React from 'react';
 import {connect} from 'react-redux';
 import './Phimct.css';
 import {
-    BrowserRouter as Router,
     Link,
   } from "react-router-dom";
-
-
 
 class PhimdcList extends React.Component{
     
@@ -28,13 +25,9 @@ class PhimdcList extends React.Component{
         return listItems;
     }
     render(){
-        // let list = this.props.pdc;
-        //  console.log(list);
         return(
             <div className="Phimdc">
-                <div className="contact">
-                    {this.createPhimListItems()}
-                </div>
+                <div className="contact">{this.createPhimListItems()}</div>
             </div>
         );
     }

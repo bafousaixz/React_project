@@ -1,12 +1,7 @@
 import React from 'react';
-import { get } from 'https';
 import './Phimct.css';
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
     Link,
-    useParams
   } from "react-router-dom";
 
 

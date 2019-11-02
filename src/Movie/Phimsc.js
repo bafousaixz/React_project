@@ -1,13 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import './Phimct.css';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    useParams
-  } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 
 

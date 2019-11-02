@@ -1,10 +1,7 @@
 import React from 'react';
 import './Food.css';
 import {connect} from 'react-redux';
-
-import {
-    Link,
-  } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 class Food extends React.Component{
 

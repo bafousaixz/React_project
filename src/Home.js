@@ -1,13 +1,7 @@
 import React from 'react';
 import './Home.css';
 import Footer from './Footer/Footer.js';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    useParams
-  } from "react-router-dom";
+import {Link} from "react-router-dom";
 import Phimdc from './Movie/Phimdc';
 
 class Home extends React.Component{
@@ -15,17 +9,10 @@ class Home extends React.Component{
         return(
             <div className="home">
                 <div className="phan-tren">
-                    <div className="ngoai-cung-ben-trai">
-                        <Link to="/"><img src="./images/km.jpg" /></Link>
-                    </div>
-
-                    <div className="phim-hot-vcl">
-                        <Link to="/"><i id="nut-play" class="fas fa-play"></i></Link>
-                    </div>
+                    <div className="ngoai-cung-ben-trai"><Link to="/"><img src="./images/km.jpg" /></Link></div>
+                    <div className="phim-hot-vcl"><Link to="/"><i id="nut-play" class="fas fa-play"></i></Link></div>
                 </div>
-
                 <div className="danh-sach-phim"><Phimdc/></div>
-
                 <div className="tin-khuyen-mai">
                     <div className="event"><h1>EVENT</h1></div>
                         <div className="ben-trai">
@@ -66,6 +53,7 @@ class Home extends React.Component{
                             </div>
                         </div>
                 </div>
+                
                 <Footer/>
             </div>
         );    
