@@ -7,7 +7,10 @@ import Contact from './Contact/Contact.js'
 import Phimdel from './Movie/Phimdel.js'
 import Login from './Login/Login.js'
 import Datve from './Datve/Datve.js'
-import Food from './food/Food.js';
+import Khuyenmai from './Khuyenmai/Khuyenmai.js';
+import EventDetail from './Khuyenmai/EventDetail.js';
+import Thanhtoan from './Datve/thanhtoan.js';
+import Giave from './Datve/giave.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -41,7 +44,7 @@ class App extends React.Component {
             <Link className="content" to="/mua-ve">Mua vé</Link>
             <Link className="content" to="/phim">Phim</Link>
             <Link className="content" to="/rap">Rạp</Link>
-            <Link className="content" to="/khuyen-mai">Khuyến mãi</Link>
+            <Link className="content" to="/khuyenmai">Khuyến mãi</Link>
           </div>
             
       
@@ -49,15 +52,15 @@ class App extends React.Component {
             <Route exact path="/"><Home/></Route>
             <Route path="/mua-ve"><Muave/></Route>
             <Route path="/phim"><Phim/></Route>
-            <Route path="/rap"><Food/></Route>
-            <Route path="/khuyen-mai"><Khuyenmai/></Route>
-            <Route path="/khuyen-mai/:id"><Khuyenmai/></Route>
+            <Route path="/thanh-toan"><Thanhtoan/></Route>
+            <Route exact path="/khuyenmai"><Khuyenmai/></Route>
+            <Route path="/khuyenmai/:id"><EventDetail/></Route>
             <Route path="/About"><About/></Route>
             <Route path="/Contact"><Contact/></Route>
             <Route path="/dang-nhap"><Login/></Route>
             <Route path="/phim-detail/:id"><Phimdel/></Route>
             <Route path="/dat-ve"><Datve/></Route>
-    
+            <Route path="/gia-ve"><Giave/></Route>
           </Switch>
         </div>
       </Router>
@@ -89,16 +92,7 @@ class Rap extends React.Component{
   };
 }
 
-class Khuyenmai extends React.Component{
-  constructor(props){
-    super(props)
-  }
-  render(){
-    return(
-      <h1>Day la trang Khuyen mai</h1>
-    );
-  };
-}
+
 
 
 export default App;

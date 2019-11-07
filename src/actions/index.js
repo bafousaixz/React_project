@@ -1,15 +1,15 @@
-// import * as types from './constants';
+import * as types from './constants';
 
+export const SUB = (val)=>{
+    return{
+        type: types.SUB,
+        value: val
+    };
+}
 
-// export const add = (value)=>{
-//     return{
-//         type: types.ADD,
-//         value
-//     };
-// }
-// export const sub = (value)=>{
-//     return{
-//         type: types.SUB,
-//         value
-//     }
-// }
+export const ADD = (val)=>{
+    return{
+        type: types.ADD,
+        value: val
+    };
+}

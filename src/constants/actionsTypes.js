@@ -1,7 +1,2 @@
-
-
-const ADD = 'ADD';
-const SUB = 'SUB';
-
-exports.ADD = ADD;
-exports.SUB = SUB;
+export const ADD = 'ADD';
+export const SUB = 'SUB';

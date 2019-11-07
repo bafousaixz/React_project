@@ -45,5 +45,11 @@
     #ic{
         display: none;
     }
+    .gt h1{
+        font-size: 15px;
+    }
+    .gt p{
+        font-size: 15px;
+    }
 } 
 

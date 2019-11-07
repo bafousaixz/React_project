@@ -1,12 +1,6 @@
 import React from 'react';
 import "./Footer.css";
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    useParams
-  } from "react-router-dom";
+import {Link} from "react-router-dom";
 class Footer extends React.Component{
     render(){
         return(
@@ -15,13 +9,13 @@ class Footer extends React.Component{
                <div className="top">
                     <div className="gt">
                         <h1>Giới thiệu</h1>
-                        <p> <Link style={{color:"#fff", textDecoration: "none"}} to="/about" ><i class="fas fa-angle-right"></i> About</Link></p>
+                        <p> <Link style={{color:"#fff", textDecoration: "none"}} to="/about" target="_top"><i class="fas fa-angle-right"></i> About</Link></p>
                         <p><i class="fas fa-angle-right"></i> Chính sách bảo mật</p>
                         <p><i class="fas fa-angle-right"></i> Sơ đồ website</p>
                     </div>
                     <div className="gt">
                         <h1>Hỗ trợ</h1>
-                        <p><Link style={{color:"#fff", textDecoration: "none"}} to="/contact" ><i class="fas fa-angle-right"></i> Contact</Link></p>
+                        <p><Link style={{color:"#fff", textDecoration: "none"}} to="/contact" target="_top" ><i class="fas fa-angle-right"></i> Contact</Link></p>
                         <p><i class="fas fa-angle-right"></i> Điện thoại liên hệ</p>
                         <p style={{fontWeight:"bold", fontSize:"20px", marginTop:"3px"}}>123456789</p>
                     </div>

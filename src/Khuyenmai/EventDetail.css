@@ -1,0 +1,23 @@
+.eventDetail {
+    position: relative;
+    background: #fff;
+    padding: 30px;
+    margin: 0 15% 0 15%;
+    padding-left: 0;
+}
+
+.eventDetail h1 {
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.eventDetail p {
+    margin: 0 10% 0 10%;
+}
+
+.eventDetail img {
+    margin: 0 auto;
+    padding: 0;
+    padding-left: 0;
+    padding-bottom: 50px;
+}

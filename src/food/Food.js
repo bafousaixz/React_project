@@ -1,7 +1,6 @@
 import React from 'react';
 import './Food.css';
 import {connect} from 'react-redux';
-import {Link} from "react-router-dom";
 
 class Food extends React.Component{
 
@@ -10,7 +9,7 @@ class Food extends React.Component{
             (food)=>{
                 return(
                     <div key={food.img} className="Food">
-                        <Link to="/"><img src={food.img}></img></Link>
+                        <img src={food.img}></img>
                         <h1>{food.name}</h1>
                         <div className="Food-ct">
                             <p className="Food-time">Giá bán online: </p>
