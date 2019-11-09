@@ -8,6 +8,27 @@ import {connect} from 'react-redux';
 import {Link} from "react-router-dom";
  
 class Datve extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = ({
+          value: 0
+        });
+        this.add = this.add.bind(this);
+        this.sub = this.sub.bind(this);
+      }
+    
+      add(){
+        var val = (this.state.value >=8) ? 8 : (this.state.value +1);
+        this.setState({
+           value: val,
+          });
+      }
+      sub(){
+        var val = (this.state.value <= 0) ? 0 : (this.state.value -1);
+        this.setState({
+           value: val,
+          });
+      }
   
     render(){
         return(
@@ -18,11 +39,11 @@ class Datve extends React.Component{
                         <div className="Dat-ve-select">
                         <div className="nut"> 
                             Số lượng vé   
-                            <button onClick={() =>{this.props.dispatch({type : 'SUB'})}} style={{background: "#3498db", color:"#fff", fontWeight:"bold"}}>-</button>
-                            {this.props.val}
-                            <button onClick={() =>{this.props.dispatch({type : 'ADD'})}} style={{background: "#3498db", color:"#fff", fontWeight:"bold"}}>+</button>
+                            <button onClick={this.sub} style={{background: "#3498db", color:"#fff", fontWeight:"bold"}}>-</button>
+                            {this.state.value}
+                            <button onClick={this.add} style={{background: "#3498db", color:"#fff", fontWeight:"bold"}}>+</button>
                         </div>
-                            <Link className="Dat-ve-l" to="/gia-ve" target="_blank">Giá vé</Link>
+                            <Link className="Dat-ve-l" to="/gia-ve" target="_blank">Giá vé: 75.000đ </Link>
                         </div>
                         <p>Chọn ghế liền nhau dùm cái, please!!!</p>
                     </div>  
@@ -67,12 +88,12 @@ class Datve extends React.Component{
                             </li>
                             <li style={{borderRight:"1px solid #515151"}}>
                                 <h1>Thông tin sản phẩm</h1>
-                                <h2>Solo combo  <p>75.000đ</p></h2>
+                                <h2>{this.props.selectfood.name}  <p>{this.props.selectfood.gia}</p></h2>
                             </li>
                             <li >
                                 <h1>Tổng tiền đơn hàng</h1>
                                 <h2>Đặt trước phim  <p>75.000đ</p></h2>
-                                <h2>Mua hàng        <p>75.000d</p></h2>
+                                <h2>Mua hàng        <p>{this.props.selectfood.gia}</p></h2>
                                 <h3>Tổng cộng        <p>150.000d</p></h3>
                             </li>
                         </ul>
@@ -87,10 +108,10 @@ class Datve extends React.Component{
 
 function  mapStateToProps(state) {
     return {
-        plus: state.plus,
-        val : state.val,
+        selectfood: state.selectfood,
     };
 }
+
 let DatveContainer = connect(mapStateToProps)(Datve);
 
 export default DatveContainer;

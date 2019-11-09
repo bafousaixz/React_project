@@ -2,11 +2,7 @@
     height: 600px;
     margin-bottom: 30px;
 }
-.ngoai-cung-ben-trai {
-    width: 25%;
-    float: left;
-    margin-right: 10px;
-}
+
 .ngoai-cung-ben-trai img{
     width: 100%;
     height: 600px;
@@ -27,10 +23,11 @@
 }
 .phim-hot-vcl{
     float: left;
-    width: 74%;
-    height: 600px;
-    background-image: url("http://www.lottecinemavn.com/Media/MovieFile//MovieImg/201910/10194_105_100009.jpg");
+    width: 100%;
+    height: 100%;
+    background-image: url("https://www.moviepostersusa.com/media/easyslide/glow-in-the-dark-jedi-poster.gif");
     background-size: cover;
+    background-position: center;
     text-align: center;
 }
 #nut-play{

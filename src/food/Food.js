@@ -1,6 +1,8 @@
 import React from 'react';
 import './Food.css';
 import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import {selectfood} from '../actions/index.js'
 
 class Food extends React.Component{
 
@@ -9,7 +11,7 @@ class Food extends React.Component{
             (food)=>{
                 return(
                     <div key={food.img} className="Food">
-                        <img src={food.img}></img>
+                        <img onClick ={()=> {this.props.selectfood(food)}} src={food.img}></img>
                         <h1>{food.name}</h1>
                         <div className="Food-ct">
                             <p className="Food-time">Giá bán online: </p>
@@ -32,10 +34,13 @@ class Food extends React.Component{
 
 function mapStateToProps(state){
     return{
-        food: state.food
+        food: state.food,
     };
 }
+function  mapDispatchToProps(dispatch) {
+    return bindActionCreators({selectfood: selectfood}, dispatch); 
+}
 
-let FoodContainer = connect(mapStateToProps)(Food);
+let FoodContainer = connect(mapStateToProps, mapDispatchToProps)(Food);
 
 export default FoodContainer ;

@@ -1,15 +1,21 @@
-import * as types from './constants';
 
 export const SUB = (val)=>{
     return{
-        type: types.SUB,
+        type: 'SUB',
         value: val
     };
 }
 
 export const ADD = (val)=>{
     return{
-        type: types.ADD,
+        type: 'ADD',
         value: val
+    };
+}
+
+export const selectfood = (food) =>{
+    return{
+        type: "SELECT_FOOD",
+        payload : food
     };
 }

@@ -9,7 +9,6 @@ class Home extends React.Component{
         return(
             <div className="home">
                 <div className="phan-tren">
-                    <div className="ngoai-cung-ben-trai"><Link to="/"><img src="./images/km.jpg" /></Link></div>
                     <div className="phim-hot-vcl"><Link to="/"><i id="nut-play" class="fas fa-play"></i></Link></div>
                 </div>
                 <div className="danh-sach-phim"><Phimdc/></div>
