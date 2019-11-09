@@ -4,13 +4,18 @@ import Footer from './Footer/Footer.js';
 import {Link} from "react-router-dom";
 import Phimdc from './Movie/Phimdc';
 
+
+
 class Home extends React.Component{
     render(){
         return(
             <div className="home">
                 <div className="phan-tren">
-                    <div className="phim-hot-vcl"><Link to="/"><i id="nut-play" class="fas fa-play"></i></Link></div>
+                    <div className="phim-hot-vcl">
+                        <h1>Make today amazing</h1>
+                    </div>
                 </div>
+
                 <div className="danh-sach-phim"><Phimdc/></div>
                 <div className="tin-khuyen-mai">
                     <div className="event"><h1>EVENT</h1></div>

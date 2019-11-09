@@ -29,22 +29,22 @@ class App extends React.Component {
         <div className="App">
           <div className="top-top">
             <div className="top-right">
-            <Link id="as" className="menu-top" to="/About">About</Link>
-            <Link id="as" className="menu-top" to="/Contact">Contact</Link>
+            <Link id="as" className="menu-top" to="/About">Giới thiệu</Link>
+            <Link id="as" className="menu-top" to="/Contact">Liên hệ</Link>
             <Link className="menu-top" to="/dang-nhap">Đăng nhập</Link>
             <Link  to="/phim-detail"></Link>
             </div>
           </div>
 
           <div className="logo">
-          <Link className="name" to="/"><i id="bcd" class="fab fa-creative-commons"></i> Susan </Link>
+          <Link className="name" to="/"> Susan </Link>
           </div>
 
           <div className= "menu">
-            <Link className="content" to="/mua-ve">Mua vé</Link>
-            <Link className="content" to="/phim">Phim</Link>
-            <Link className="content" to="/rap">Rạp</Link>
-            <Link className="content" to="/khuyenmai">Khuyến mãi</Link>
+            <Link style={{borderRight:"2px solid #70a1ff"}} className="content" to="/mua-ve">MUA VÉ</Link>
+            <Link style={{borderRight:"2px solid #70a1ff"}} className="content" to="/phim">PHIM</Link>
+            <Link style={{borderRight:"2px solid #70a1ff"}} className="content" to="/rap">RẠP</Link>
+            <Link className="content" to="/khuyenmai">KHUYẾN MÃI</Link>
           </div>
             
       
