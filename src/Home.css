@@ -38,15 +38,10 @@
     color: #fff;
     font-family: 'Press Start 2P', cursive;
     text-shadow: -2px 0 #5352ed, 0 2px #5352ed;
+    
 }
-#nut-play{
-    margin-top: 250px;
-    color: #fff;
-    font-size: 40px;
-}
-.danh-sach-phim{
-    border-top: 1px solid;
-}
+
+
 .tin-khuyen-mai{
     height: 900px;
     background: #ecf0f1;
@@ -66,7 +61,7 @@
 }
 
 .ben-phai{
-    width: 200px;
+    width: 300px;
     height: 700px;
     margin: 0 auto;
     display: inline-block;

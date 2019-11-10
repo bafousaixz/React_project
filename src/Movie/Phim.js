@@ -6,11 +6,11 @@ import Phimsc from './Phimsc.js'
 import Footer from '../Footer/Footer.js'
 
 const collection = [
-  { src: './images/01.jpg'},
-  { src: './images/02.jpg'},
-  { src: './images/03.jpg'},
-  { src: './images/04.jpg'},
-  { src: './images/05.jpg'},
+  { src: 'https://galaxycine.vn/media/2019/11/8/psm-kc-2048x682_1573179322986.jpg'},
+  { src: 'http://www.lottecinemavn.com/Media/WebAdmin/5d4a262d480043088fee183a10285816.jpg'},
+  { src: 'http://www.lottecinemavn.com/Media/WebAdmin/3252a04e40c54d7aa888c4a00312183f.jpg'},
+  { src: 'https://galaxycine.vn/media/2019/11/8/dr-kc-2048x682_1573179309543.jpg'},
+  { src: 'https://galaxycine.vn/media/2019/11/1/banner-2048x682_1572600297999.jpg'},
   { src: './images/06.jpg'},
 ];
 
